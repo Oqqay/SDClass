@@ -1,0 +1,20 @@
+import turtle
+who = turtle.Turtle()
+
+def square(length, angle, move):
+  who.forward(length)
+  who.right(angle)
+  who.forward(length)
+  who.right(angle)
+  who.forward(length)
+  who.right(angle)
+  who.forward(length)
+  who.right(move)
+
+for i in range(10):
+  square(120, 90, 50)
+turtle.setpos(50, y=None)
+turtle.color("black", "red")
+turtle.begin_fill()
+turtle.circle(50)
+turtle.end_fill()
