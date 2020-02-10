@@ -21,7 +21,6 @@ def ground():
   who.forward(450)
   who.end_fill()
 
-def leaves():
 
 
 
@@ -59,13 +58,25 @@ who.setposition(-450,0)
 ground()
 who.penup()
 who.setpos(-225, -225)
-tree(300,50, 290)
-leaves()
+tree(300,50, 300)
+who.right(90)
+who.forward(25)
+who.pendown()
 
+for i in range(10):
+  who.begin_fill()
+  who.color(255, 150, 0)
+  square(120, 90, 50)
+  who.end_fill()
+  who.color(200, 255, 100)
+  who.begin_fill()
+  square(120, 90, 50)
+  who.end_fill()
 
-
-#for i in range(10):
- # square(120, 90, 50)
+who.color("black")
+for i in range(2):
+    who.setpos(50, 0)
+    square(120, 90, 50)
 #turtle.setpos(50, y=None)
 #turtle.color("black", "red")
 #turtle.begin_fill()
