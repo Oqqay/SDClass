@@ -1,0 +1,40 @@
+import random
+import os
+
+PlayerOneScore = 0
+PlayerTwoScore = 0
+ComputerScore = 0
+
+def VsComputer():
+  global PlayerOneScore
+  global ComputerScore
+  print("I see, so you either have no friends, or said friends are unavailable at the moment. Either way, thank you for playing and enjoy yourself.os")
+  print("Now, what will you choose: ")
+
+  {"rock": 0, "paper": 1, "scissors": 2}
+
+  ComputerChoice = 1
+
+  HumanChoice = input("type 'rock';                                                                                 type 'paper';                                                                                type 'scissors': ")
+
+  if (HumanChoice - ComputerChoice) % 2 == 1:
+    ComputerScore = ComputerScore + 1
+    print("Computer chose: " + ComputerChoice + ". You chose:" + HumanChoice + ". Computer wins")
+    print ("Computer score =" + ComputerScore)
+  
+
+
+def TitleScreen():
+  TitleScreenChoice = input( "type 'computer' to go against a cpu;                                                         type 'local' to play against a friend on the same computer: ")
+  if TitleScreenChoice == 'computer':
+    os.system('clear')
+    VsComputer()
+
+
+
+print("Welcome to my little Rock, Paper, Scissors (or is it Paper, Rock Scissors? Who knows) game.")
+print("Here are the choices: ")
+
+TitleScreen()
+
+
