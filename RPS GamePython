@@ -14,6 +14,7 @@ def VsComputer():
   {"rock": 0, "paper": 1, "scissors": 2}
 
   ComputerChoice = 1
+#gonna have to do some if statments instead. However, maybe if statements on checking whether player's word choice is 'rock', then assign another number variable to either 0, 1, 2 accordingly. Then, the math approach of if statments.
 
   HumanChoice = input("type 'rock';                                                                                 type 'paper';                                                                                type 'scissors': ")
 
