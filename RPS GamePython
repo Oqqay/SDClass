@@ -4,35 +4,93 @@ import os
 PlayerOneScore = 0
 PlayerTwoScore = 0
 ComputerScore = 0
+Retry = bool(False)
+AgainstCPU = bool(False)
+AgainstPlayer = bool(False)
+
+def choiceToNumber(choice):
+   return {"rock": 0, "paper": 1, "scissors": 2}[choice]
+
+def TryAgain():
+  global PlayerOneScore
+  global PlayerTwoScore
+  global ComputerScore
+  global Retry
+  global AgainstCPU
+  global AgainstPlayer
+
+  print("Try Again?")
+  Choice = input("type 'yes' or 'no': ")
+  if Choice == 'yes' and AgainstCPU:
+    VsComputer()
+  
+  ##if Choice == 'yes' and AgainstPlayer:
+
+
+  elif Choice == 'no':
+    Retry = False
+    PlayerOneScore = 0
+    PlayerTwoScore = 0
+    ComputerScore = 0
+    TitleScreen()
+
+  else:
+    print("oops, incorrect response")
+    TryAgain()
 
 def VsComputer():
   global PlayerOneScore
   global ComputerScore
-  print("I see, so you either have no friends, or said friends are unavailable at the moment. Either way, thank you for playing and enjoy yourself.os")
+  global Retry
+  global AgainstCPU
+  AgainstCPU = True
+  os.system('clear')
   print("Now, what will you choose: ")
+  print("type 'rock'; type 'paper'; or type 'scissors'")
+  ComputerChoice = random.choice(["rock", "paper", "scissors"])
+  print(ComputerChoice)#for troubleshooting
+  ComputerNumber = choiceToNumber(ComputerChoice)
+  print(ComputerNumber)
+  HumanChoice = input("")
+  if Human
+  HumanNumber = choiceToNumber(HumanChoice)
+  
+  if (HumanNumber - ComputerNumber) % 3 == 1:
+    PlayerOneScore = PlayerOneScore + 1
+    print("Computer chose: " + ComputerChoice + ". You chose: " + HumanChoice)
+    print("YOU WIN!")
+    print ("Computer score = " + str(ComputerScore))
+    print ("Your score = " + str(PlayerOneScore))
+    TryAgain()
 
-  {"rock": 0, "paper": 1, "scissors": 2}
+  elif HumanNumber == ComputerNumber:
+    print("Computer chose: " + ComputerChoice + ". You chose: " + HumanChoice)
+    print("IT'S A TIE")
+    print ("Computer score = " + str(ComputerScore))
+    print ("Your score = " + str(PlayerOneScore))
+    TryAgain()
 
-  ComputerChoice = 1
-#gonna have to do some if statments instead. However, maybe if statements on checking whether player's word choice is 'rock', then assign another number variable to either 0, 1, 2 accordingly. Then, the math approach of if statments.
-
-  HumanChoice = input("type 'rock';                                                                                 type 'paper';                                                                                type 'scissors': ")
-
-  if (HumanChoice - ComputerChoice) % 2 == 1:
+  else:
     ComputerScore = ComputerScore + 1
-    print("Computer chose: " + ComputerChoice + ". You chose:" + HumanChoice + ". Computer wins")
-    print ("Computer score =" + ComputerScore)
+    print("Computer chose: " + ComputerChoice + ". You chose: " + HumanChoice)
+    print("COMPUTER WINS!")
+    print ("Computer score = " + str(ComputerScore))
+    print ("Your score = " + str(PlayerOneScore))
+    TryAgain()
+
   
 
 
 def TitleScreen():
-  TitleScreenChoice = input( "type 'computer' to go against a cpu;                                                         type 'local' to play against a friend on the same computer: ")
+  os.system('clear')
+  print("type 'computer' to go against a cpu;")
+  TitleScreenChoice = input("type 'local' to play against a friend on the same computer: ")
+
   if TitleScreenChoice == 'computer':
-    os.system('clear')
     VsComputer()
 
 
-
+#---------------------------------------------------------#
 print("Welcome to my little Rock, Paper, Scissors (or is it Paper, Rock Scissors? Who knows) game.")
 print("Here are the choices: ")
 
