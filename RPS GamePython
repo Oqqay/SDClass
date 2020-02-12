@@ -4,7 +4,6 @@ import os
 PlayerOneScore = 0
 PlayerTwoScore = 0
 ComputerScore = 0
-Retry = bool(False)
 AgainstCPU = bool(False)
 AgainstPlayer = bool(False)
 
@@ -15,7 +14,6 @@ def TryAgain():
   global PlayerOneScore
   global PlayerTwoScore
   global ComputerScore
-  global Retry
   global AgainstCPU
   global AgainstPlayer
 
@@ -30,7 +28,8 @@ def TryAgain():
 
 
   elif Choice == 'no':
-    Retry = False
+    AgainstCPU = False
+    AgainstPlayer = False
     PlayerOneScore = 0
     PlayerTwoScore = 0
     ComputerScore = 0
@@ -43,7 +42,6 @@ def TryAgain():
 def VsLocal():
   global PlayerOneScore
   global PlayerTwoScore
-  global Retry
   global AgainstPlayer
   AgainstPlayer = True
   print("Now, Player 1, what will you choose? (make sure to look away Player 2): ")
@@ -61,7 +59,7 @@ def VsLocal():
       PlayerTwoNumber = choiceToNumber(PlayerTwoChoice)
       if (PlayerOneNumber - PlayerTwoNumber) % 3 == 1:
         PlayerOneScore = PlayerOneScore + 1
-        print("Player 2 chose: " + PlayerTwoChoice + ". You chose: " + PlayerOneChoice)
+        print("Player 2 chose: " + PlayerTwoChoice + ". Player 1 chose: " + PlayerOneChoice)
         print("PLAYER 1 WINS!")
         print ("Player 2 score = " + str(PlayerTwoScore))
         print ("Player 1 score = " + str(PlayerOneScore))
@@ -94,7 +92,6 @@ def VsLocal():
 def VsComputer():
   global PlayerOneScore
   global ComputerScore
-  global Retry
   global AgainstCPU
   AgainstCPU = True
   os.system('clear')
@@ -154,5 +151,4 @@ def TitleScreen():
 
 
 TitleScreen()
-
 
