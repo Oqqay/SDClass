@@ -1,10 +1,9 @@
 
   <head>
     <link rel = "stylesheet" href = "stylinHere.css">
-  </head>
+
   
   <body>
-    <h1><p class = "center">Hello</p></h1>
+    <h1><p class = "center">Hello
     
-  </body>
 
