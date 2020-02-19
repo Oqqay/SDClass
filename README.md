@@ -1,4 +1,13 @@
-## Welcome to GitHub Pages
+## Welcome to my Software Development class Github page
+###### (I promise, while we were forced to make this, we are having fun nonetheless)
+
+### Anyways, here we go:
+#### First - Who Am I?:
+- My name is **Lenin**, but I asure you that I am not a communist.
+- Hobbies include -
+  1. Programming (of course)
+  2. Practicing guitar
+  3. Living life
 
 You can use the [editor on GitHub](https://github.com/Oqqay/SDClass/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
