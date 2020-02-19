@@ -1,4 +1,4 @@
-<html>
+
   <head>
     <link rel = "stylesheet" href = "stylinHere.css">
   </head>
@@ -7,4 +7,4 @@
     <h1><p class = "center">Hello</p></h1>
     
   </body>
-</html>
+
