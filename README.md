@@ -10,8 +10,8 @@
     * gAmInG
 
 #### Second - My Projects:
-- RPSGame_Lenin.py
-- ArtWork.py
+- [RPSGame_Lenin.py](RPSGame_Lenin.py)
+- [ArtWork.py](ArtWork.py)
 You can use the [editor on GitHub](https://github.com/Oqqay/SDClass/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
