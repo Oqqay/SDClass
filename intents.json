@@ -1,0 +1,38 @@
+{"intents":[
+  {"tag": "hellos",
+  "patterns": ["Hi", "Hello", "How are you", "Good day", "Wass poppin", "Sup", "Is anyone there?"],
+  "responses": ["Hello!", "Good to see you", "Hey there partner", "How's it going"],
+  "context_set": ""
+  },
+  {"tag": "positive response",
+  "patterns": ["Good", "Great", "Alright", "Cool", "Awesome", "Fine", "Im good"],
+  "responses": ["Thats good to hear", "That's great", "Awesome sauce", "Good for you"],
+  "context_set": ""
+  },
+  {"tag": "negative responses",
+  "patterns": ["Bad", "Terrible", "Horrible", "Could be better", "Not so good", "Not so great"],
+  "responses": ["Ahh that sucks :(", "Well, hope it gets better", "Just to let you know, Im here for you"],
+  "context_set": ""
+  },
+  {"tag": "thanks",
+  "patterns": ["Thanks", "Thank you", "Merci", "Merci beaucoup", "Thanks a lot", "Thanks alot"],
+  "responses": ["No problem :)", "No worries", "You're welcome", "De rien (you're welcome)", "You're absolutely welcome"],
+  "context_set": ""
+  },
+  {"tag": "name",
+  "patterns": ["What's you're name", "Who are you", "What should I call you", "What are you"],
+  "responses": ["Jack, the game provider. So far, I can only provide 'hangman'. Do you want to play"],
+  "context_set": ""
+  },
+  {"tag": "yesgame",
+  "patterns": ["Yes","Yea", "Ye", "Sure", "Yeah", "Ok", "I want to play", "Yes, I'd like to play"],
+  "responses": ["Alright, here it goes.", "Awesome. Lets go.", "Cool, here we go.", "Herrre weee gooo!"],
+  "context_set": ""
+  },
+  {"tag": "nogame",
+  "patterns": ["No", "Nope", "Nah"],
+  "responses": ["Well, Im sorry, but, too bad", "Too late", "Well, we're playing it anyway"],
+  "context_set": ""
+  },
+]
+}
